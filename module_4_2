@@ -1,0 +1,19 @@
+
+
+def test_function():
+	def inner_function():
+		print ("Я в области видимости функции test_function")
+	inner_function()
+
+test_function()
+
+#ВЫВОД
+#Я в области видимости функции test_function
+#[Program finished]
+
+inner_function()
+
+# ВЫВОД 
+#  File "<string>", line 8, in <module>
+#NameError: name 'inner_function' is not defined
+#[Program finished]
